@@ -13,7 +13,8 @@ body {
 h1 {
     font-family: 'Pacifico', cursive;
     text-shadow:4px 4px 4px yellow;
-    text-decoration:underline pink wavy 10px;
+    /* text-decoration:underline pink wavy 10px; */'
+    text-decoration:none;
 }
 
 nav {
