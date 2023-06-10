@@ -1,0 +1,24 @@
+
+.me {
+    display:flex;
+    flex-direction:row; 
+    align-items:center;
+}
+
+nav ul {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+}
+
+#contactMe ul {
+    display:flex;
+    flex-direction:row;
+}
+
+.footer {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+    align-items:center;
+}
