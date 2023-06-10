@@ -1,0 +1,21 @@
+.baker2 {
+    width:15%;
+    height:40%;
+    position: relative;
+    animation: bakerm infinite;
+    animation-duration: 1s;
+    visibility:hidden;
+}
+
+@keyframes bakerm {
+    from {left:800px;}
+    to {left:0px;}
+}
+
+.cash:active {
+    transform:scale(.75,.75);
+}
+
+.donut:active {
+    transform: rotateY(180deg);
+}

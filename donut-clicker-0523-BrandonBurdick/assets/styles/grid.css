@@ -1,0 +1,32 @@
+.container {
+    display:grid;
+    grid:330px 330px 330px/ 335px repeat(3,417px) 335px;
+}
+
+.header {
+    grid-row:1;
+    grid-column:2/ span 3;
+    justify-self:center;
+}
+
+#totalDonuts {
+    align-self:center;
+}
+
+.hireChef {
+    grid-column-start:5;
+}
+
+.donutDiv {
+    grid-row-start:2;
+    display:flex;
+    flex-direction:row;
+}
+
+.instructions {
+    grid-column-start:5;
+}
+
+.marqueeArea {
+    grid-column:2/ span 3;
+}

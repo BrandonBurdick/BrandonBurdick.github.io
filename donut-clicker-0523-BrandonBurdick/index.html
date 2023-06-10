@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/grid.css">
+    <link rel="stylesheet" href="./assets/styles/flex.css">
+    <link rel="stylesheet" href="./assets/styles/animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <title>Donut Clicker</title>
+</head>
+<body>
+  <div class="container">
+    <div class="origin">
+    </div>
+    <header class="header">
+      <script src="./assets/scripts/app.js"></script>
+      <h1>Donut Clicker</h1>
+      <nav>
+        <ul class="nav">
+
+          <li class="feat5">
+              <a href="#feat5" class="navLink">
+                About The Company
+              </a>
+              <div class="company" id="company" name="company">
+                <p>
+                  Fred the Baker Company produces donuts all over the United States. 
+                  Millions of people have enjoyed Fred's pastries and now you can produce them too.
+                </p>
+              </div>
+          </li>
+
+          <li>
+              <a href="https://orteil.dashnet.org/cookieclicker/" target="_blank" class="navLink">
+                The inspiration for our game!
+              </a>
+          </li>
+
+          <li class="feat7">
+            <a href="#feat7"class="navLink">
+              About Me
+            </a>
+            <div class="aboutMe" id="aboutMe" name="aboutMe">
+              <p>This site was created by Brandon Burdick. Click <a href="#" onclick="openModal()">here</a> to learn more about the creator. </p>
+          </div>
+          </li>
+
+        </ul>
+      </nav>
+    </header>
+    
+    <div class="donutDiv">
+        <img src="./assets/images/donut1.png" class="donut" name="donut" id="donut" onclick="donutTally()" draggable="false">
+      <p id="totalDonuts">Total Donuts: 0</p>
+    </div>
+
+    <div class="instructions">
+      <p>How to play: 
+        <ul>
+          <li>Click donut on left to add a donut to your count.</li>
+          <li>You can hire additional bakers to bake for you.</li>
+          <li>Click the baker below to hire additional bakers.</li>
+          <li>Bakers will make 1 extra donut per baker.</li>
+          <li>Click on the oven to install additional ovens.</li>
+          <li>Ovens will increase baker output tenfold.</li>
+          <li>Click the register to clock out and reset.</li>
+        </ul>
+      <button  id="reset" onclick="resetAll()">
+        <img src="./assets/images/cash.png" alt="image of a register" draggable="false" class="cash">
+        </button>
+      </p>
+
+    </div>
+    <div class="hireChef">
+      <p>Hire bakery chef:</p>
+      <img src="./assets/images/baker1.png" class="baker" name="baker" id="baker" onmousedown="hireWorker()" draggable="false">
+      <p id="displayDonutCost">Cost of Hiring: 100 Donuts</p>  
+      </div>
+      <div class="ovenArea" id="ovenArea" >
+        <p id="oCost">Cost of Oven Installation: 900 Donuts</p>
+        <p id="ovens">Additional Ovens Installed: 0</p>
+      </div>
+      <div class="marqueeArea">
+        <img src="./assets/images/oven.png" alt="image of an oven" class="oven" id="oven" draggable="false" onmousedown="addOven()">
+        <img src="./assets/images/baker1.png" alt="marquee of a baker" class="baker2" id="baker2" draggable="false">
+        
+      </div>
+      <div class="bakersArea" id="bakerDiv">
+        <p id="bakers">Bakers Hired: 0</p>
+      </div>
+  </div>
+  <div class="modal" id="modal" name="modal">
+    <div class="modalContent" id="modalContent" name="modalContent">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <p>Hi my name is Brandon.  I'm aspiring to be a Web Developer or Software Designer.</p>
+        <ul class="modalLink">
+          <li><a href="https://brandonburdick.github.io/index.html" target="_blank">Click here to view Portfolio.</a></li>
+          <li><a href="https://github.com/BrandonBurdick" target="_blank">Click here to view GitHub</a></li>
+        </ul>
+    </div>
+  </div>
+</body>
+</html>
