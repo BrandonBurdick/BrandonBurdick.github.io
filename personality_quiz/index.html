@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lion King Personality Quiz</title>
+
+    <link rel="stylesheet" type="text/css" href="./site.css"/>
+</head>
+<body>
+
+    <div id="quizContainer">
+
+        <h1>Which Lion King character are you?</h1>
+
+        <button id="takeAgain" style="display: none; float: right;" onclick="window.location.reload()">Take Again</button>
+
+        <div id="quizZone">
+
+            <p>Click <strong>Start Quiz</strong> to find out!</p>
+
+            <button onclick="startQuiz()">Start Quiz</button>
+
+        </div>
+
+        <!-- Comments in HTML look like this -->
+        <div>
+
+            <!--
+                HTML comments can span multiple lines.
+                The <div> around this section^^ isn't necessary.
+                Feel free to delete it!
+                Don't forget to delete the closing tag!
+
+                The results below are hidden by CSS when the page loads.
+                When the quiz is finished, JavaScript will make the correct result visible.
+            -->
+            <div id="answer-ed" class="answer ed hide">
+                <h4>You are Ed!</h4>
+                <p>
+                    <img src="images/ed.webp" />
+                    Pros: active, friendly, fun
+                    <br>
+                    Cons: short attention span, really want to be liked, angry when hungry
+                    </ul>
+                </p>
+            </div>
+            
+            <div id="answer-scar" class="answer scar hide">
+                <h4>You are Scar!</h4>
+                <p>
+                    <img src="images/scar.png" />
+                    Pros: Manipulative? Anyway it's a pro for you.
+                    <br>
+                    Cons: easy for your ego to get hurt, tend to be a loner, sometimes would rather scheme than just communicate about what you need
+                </p>
+            </div>
+            
+            <div id="answer-rafiki" class="answer rafiki hide">
+                <h4>You are Rafiki!</h4>
+                <p>
+                    <img src="images/rafiki.webp" />
+                    Pros: social, wise, great at fitting in
+                    <br>
+                    Cons: Old and possibly senile.
+                </p>
+            </div>
+            
+            <div id="answer-simba" class="answer simba hide">
+                <h4>You are Simba!</h4>
+                <p>
+                    <img src="images/simba.webp" />
+                    Pros: good listener, resilient, dedicated and can see things through
+                    <br>
+                    Cons: slow to let people in, can be defensive
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
