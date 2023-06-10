@@ -49,6 +49,11 @@ nav a:hover {
     /* background:blue; */
     /* background:rgb(52, 149, 235); */
     background:#7777ff;
+    border:1px solid black;
+}
+
+nav a:active {
+    border:4px double black;
 }
 
 ul {
